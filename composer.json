@@ -1,5 +1,5 @@
 {
-  "name": "nyx/php-automessage",
+  "name": "nyx-tc/php-automessage",
   "description": "PHP library to send events to NYX Automessage.",
   "type": "library",
   "license": "GPL-3.0-or-later",
