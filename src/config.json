@@ -1,0 +1,19 @@
+{
+  "apiEndpoint": "https://jsonplaceholder.typicode.com/posts",
+  "apiToken": "",
+  "events": [
+    {
+      "name": "newLogin",
+      "description": "You can send this event when some user login."
+    },
+    {
+      "name": "createAccount",
+      "description": "You can send this event when an account has been created."
+    },
+    {
+      "name": "updateAccount",
+      "description": "You can send this event when an account has been updated."
+    }
+  ]
+
+}
