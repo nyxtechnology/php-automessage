@@ -1,7 +1,11 @@
 {
-  "apiEndpoint": "https://jsonplaceholder.typicode.com/posts",
+  "apiEndpoint": "automessage.nyx.tc/api/webhook",
   "apiToken": "",
   "events": [
+    {
+      "name": "subscribeList",
+      "description": "You can send this event to create groups of users (customer segmentation)."
+    },
     {
       "name": "newLogin",
       "description": "You can send this event when some user login."
