@@ -27,5 +27,7 @@ $data = [
 ];
 
 $jsonData = json_encode($data);
+
+Automessage::$endpoint = 'automessage.nyx.tc/api/webhook';
 print_r(Automessage::sendEvent($jsonData));
 ```

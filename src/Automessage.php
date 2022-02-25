@@ -5,7 +5,7 @@ namespace Nyx\Automessage;
 class Automessage {
 
     private static $curl;
-    private static $config;
+    public static $endpoint;
 
     public static function sendEvent($data) {
         self::init();
@@ -20,7 +20,6 @@ class Automessage {
     }
 
     private static function init() {
-        self::$config = json_decode(file_get_contents(__DIR__ . '/config.json'));
         self::$curl = curl_init();
         self::curlOptions();
     }
@@ -28,7 +27,7 @@ class Automessage {
     private static function curlOptions() {
         curl_setopt_array(self::$curl,
             [
-                CURLOPT_URL => self::$config->apiEndpoint,
+                CURLOPT_URL => self::$endpoint,
                 CURLOPT_RETURNTRANSFER => 1,
                 CURLOPT_TIMEOUT => 100,
                 CURLOPT_SSL_VERIFYPEER => false,
